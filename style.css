@@ -3,9 +3,7 @@
 
 body{
     font-family: Raleway;
-    background: #181d1f ;
-
-    
+    background-color: black;
 }
 header {
     height: 605px;
@@ -38,8 +36,10 @@ header {
     font-size: 40px;
     font-weight: 900;
     line-height: 46.96px;
-    text-align: left;
-    color:#33A8DB;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
  
 }
 .banner-content p{
@@ -53,7 +53,6 @@ header {
     height: 46;
     text-align: center;
     text-wrap: wrap;
-    font-family: Raleway;
 }
 .banner-content button{
     border: 2px solid;
@@ -80,11 +79,12 @@ header {
     
 }
 .logo img {
-    object-fit: cover;
-    height: 268px;
-    width: 268px;
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+    margin-top: 60px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
     border-radius: 100%;
 }
 #course-content{
@@ -93,45 +93,45 @@ header {
     text-align: center;
     background-color: black;
 }
-#course-content h2{
+#course-content h2 {
     font-family: Raleway;
     margin-top: 80px;
     font-size: 32px;
     font-weight: 700;
     line-height: 37.57px;
-    letter-spacing: 0.19em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #33A8DB;
 }
-#course-content p{
+#course-content p {
     font-family: Raleway;
     width: 800px;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
     text-align: center;
-    text-decoration-skip-ink: none;
     color: white;
     text-wrap: wrap;
 }
 .modules-list{
     color: white;
     padding:  30px;
+    display: grid; 
+    justify-content: center;
 }
 .module{
+    font-family: Raleway;
+    width: 496px;
     margin-bottom: 20px;
     padding: 20px;
     border: #33A8DB solid;
     border-radius: 57px;
     background-color: #181d1f;
-    font-family: Raleway;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    box-shadow: inset 5px 5px 5px black;
     
+}
+.module span{
+    color: #33A8DB;
 }
 #transform-world{
     background-image: url(./assets/images/woman-code.png);
@@ -140,6 +140,9 @@ header {
     color: aliceblue;
     background-size: cover;
     background-attachment: fixed;
+    border-bottom: #33A8DB solid 1px;
+    border-top: #33A8DB solid 1px;
+    
 
 }
 #transform-world p{
@@ -152,4 +155,54 @@ header {
     width: 300px;
     text-align:center;
     padding: 110px 220px;
+    
+}
+#professional-challenges{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: 900px;
+    background-color: black;
+    justify-items: center;
+    border-bottom: #33A8DB solid 1px;
+}
+#professional-challenges h2{
+    font-family: Raleway;
+    display: grid;
+    width: 600px;
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    color: #33A8DB;
+}
+#professional-challenges p{
+    font-family: Raleway;
+    width: 800px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: center;
+    color: white;
+    text-wrap: wrap;
+}
+footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)) ;
+    height: 150px;
+
+}
+footer a{
+    text-decoration: none;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    text-align: center;
+    color: #33A8DB;
 }
